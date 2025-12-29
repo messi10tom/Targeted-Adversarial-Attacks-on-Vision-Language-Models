@@ -1,0 +1,17 @@
+model:
+  name: ViT-B/32
+  device: cuda
+
+attack:
+  eps: 0.031
+  alpha: 0.005
+  steps: 20
+
+anyattack:
+  latent_dim: 512
+  hidden_dim: 1024
+  lr: 1e-4
+  steps: 1
+
+eval:
+  target_text: "a photo of a cat"
